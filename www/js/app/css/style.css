@@ -1,0 +1,389 @@
+@import url(../../dijit/themes/claro/claro.css);
+@import url(../../dijit/themes/claro/document.css);
+
+@font-face {
+	font-family: SourceSansPro-Regular;
+	src: url(/fonts/SourceSansPro-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: SourceSansPro-Semibold;
+	src: url(/fonts/SourceSansPro-Semibold.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.claro {
+	font-size: 18px;
+	background: #f2f2f2;
+	font-family: SourceSansPro-Regular, sans-serif;
+}
+
+.header {
+	width: 100%;
+	height: 44px;
+	margin-bottom: 1em;
+}
+.header h2 {
+	position: absolute;
+	top: 7px;
+	margin-left: 12px;
+	font-size: 22px;
+}
+.header .dijitButton {
+	margin: 0;
+}
+.header .dijitButton .dijitButtonText {
+	margin-top: -4px;
+}
+.header #logo {
+	width: 44px;
+}
+
+.view h2 {
+	margin-top: 0;
+	text-align: center;
+	display: inline-block;
+}
+
+article {
+	padding: 10px;
+}
+article p {
+	margin: 0 0 1em;
+}
+
+.form-row {
+	padding: 3px 0;
+	position: relative;
+}
+.form-row-input {
+	position: relative;
+}
+
+.dijitToggleButton,
+.dijitButton,
+.dijitDropDownButton,
+.dijitComboButton {
+	margin: 0;
+}
+
+.dijitPlaceHolder {
+	font-style: normal;
+}
+
+.dijitButtonContents {
+	line-height: 100%;
+	margin-top: -1px;
+}
+
+.claro .dijitButtonText {
+	padding: 2px 0 0;
+}
+
+.newEntryView .form,
+.listView table,
+.summaryView table {
+	margin-bottom: 1em;
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+td, th {
+	padding: .4em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+td.amount {
+	text-align: right;
+}
+
+.dijitRadio {
+	margin: .6em !important;
+}
+
+.dj_gecko .claro .dijitTextBox .dijitInputInner,
+.claro .dijitTextBox .dijitInputInner,
+.claro .dijitTextBox .dijitPlaceHolder,
+.claro .dijitButton .dijitButtonNode,
+.dijitButtonNode.dijitDownArrowButton {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	min-width: 44px;
+	min-height: 44px;
+	padding: 10px !important;
+}
+.dijitTextBox .dijitInputInner {
+	background: transparent;  /* firefox mobile has a gradient otherwise */
+}
+
+.claro .dijitTextBox .dijitInputField {
+	padding: 0;
+}
+.claro .dijitComboBox .dijitButtonNode {
+	padding: 12px 14px !important;
+	background: #ddd;
+	border: none;
+}
+.claro .dijitComboBox .dijitArrowButtonInner {
+	border: none;
+}
+
+.claro .dijitTextBox,
+.claro .dijitButton .dijitButtonNode {
+	background: #fff;
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+}
+.claro .dijitButton .dijitButtonNode {
+	background: #ddd;
+}
+.claro .dijitButton .dijitButtonNode:hover,
+.claro .dijitButton .dijitButtonNode:focus,
+.claro .dijitButton .dijitButtonNode:active {
+	background: #d6d6d6;
+	border-color: #ccc;
+}
+
+.claro .dijitButton.create .dijitButtonNode {
+	background: #44f;
+	color: #fff;
+	border-color: #ddd;
+}
+.claro .dijitButton.create .dijitButtonNode:hover,
+.claro .dijitButton.create .dijitButtonNode:focus,
+.claro .dijitButton.create .dijitButtonNode:active {
+	background: #33e;
+	border-color: #ccc;
+}
+
+.claro .dijitButton.delete .dijitButtonNode {
+	background: #f44;
+	border-color: #c11;
+	color: #fff;
+}
+.claro .dijitButton.delete .dijitButtonNode:hover,
+.claro .dijitButton.delete .dijitButtonNode:focus,
+.claro .dijitButton.delete .dijitButtonNode:active {
+	background: #e33;
+	border-color: #b00;
+}
+
+.dijitButton.full-width {
+	display: block;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.claro .dijitTextBox.full-width,
+.claro .dijitButton.full-width .dijitButtonNode {
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-left: 0;
+	margin-right: 0;
+	border-right: none;
+	border-left: none;
+	border-radius: 0;
+}
+
+.dijitButton.destructive * {
+	color: #f32;
+}
+
+.row.toggle {
+	margin-top: 1em;
+	overflow: hidden;  /* clear */
+}
+.row.toggle .dijitButton {
+	float: left;
+	margin: 0;
+	width: 50%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.row.toggle .dijitButton .dijitButtonNode {
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.row.toggle .dijitButtonDisabled .dijitButtonNode {
+	color: #000;
+	font-family: SourceSansPro-Semibold, sans-serif;
+	border: none;
+	background: transparent;
+}
+
+
+/* new entry view */
+.newEntryView .header .dijitButtonNode {
+	font-size: 28px;
+	line-height: 100%;
+	color: #666;
+	padding: 6px 0 0 !important;
+	width: 44px;
+}
+
+.newEntryView .dijitCheckBox {
+	margin: 14px;
+}
+.newEntryView .dijitTextBox {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+}
+.participantInput {
+	color: #999;
+	position: relative;
+	height: 44px;
+}
+.participantInput.selected {
+	color: inherit;
+}
+.participantInput .dijitCheckBox {
+	position: absolute;
+	left: 0;
+}
+.participantInput .participant {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	line-height: 44px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 102px 0 44px;
+	cursor: pointer;
+}
+.participantInput .dijitNumberTextBox {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 98px;
+	height: 100%;
+	text-align: right;
+}
+.newEntryView .newParticipantInput {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 102px;
+}
+.newEntryView .participantAdd {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 98px;
+	margin: 0;
+}
+.newEntryView .participantAdd .dijitButtonNode {
+	width: 100%;
+}
+.newEntryView .dijitButton.delete {
+	margin-top: 1em;
+}
+
+
+.boxView .row.boxes {
+	margin: 1em 0;
+}
+.boxes .dijitButton {
+	border: 0 solid #ddd;
+	border-bottom-width: 1px;
+}
+.boxes .dijitButton:first-child {
+	border-top-width: 1px;
+}
+.claro .boxes .dijitButton .dijitButtonNode {
+	background: transparent url(/images/arrow.svg) right center no-repeat;
+	text-align: left;
+}
+.claro .boxView .dijitTextBox .dijitInputInner {
+	padding-right: 90px !important;
+}
+.boxView .dijitButton.create {
+	position: relative;
+	float: right;
+	top: -44px;
+}
+.boxView .dijitButton.create .dijitButtonNode {
+	border-radius: 0;
+	border: none;
+}
+
+
+#summary table {
+	border-collapse: collapse;
+}
+#summary tr {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 44px;
+}
+#summary th,
+#summary td {
+	padding: 10px;
+}
+
+#transactions .transaction {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 8px 35px 8px 10px;
+	border-top: 1px solid #ddd;
+	min-height: 44px;
+	cursor: pointer;
+	background: url(/images/arrow.svg) right center no-repeat;
+}
+#transactions .transaction:first-child {
+	border-top: none;
+}
+#transactions .dategroup {
+	background: #ddd;
+	margin: 8px 0 0;
+	padding: 2px 10px;
+	font-size: 12px;
+}
+#transactions .transaction table {
+	table-layout: auto;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0;
+}
+#transactions .transaction .title {
+	line-height: 1.1em;
+	width: 100%;
+	padding: 0;
+}
+#transactions .transaction .total {
+	line-height: 1.1em;
+	white-space: nowrap;
+	padding: 0;
+	vertical-align: middle;
+}
+#transactions .transaction .payments {
+	margin-top: 2px;
+	font-size: 12px;
+}
+
+
+#remotestorage-widget {
+	right: 4px !important;
+	top: 1px !important;
+}
+
+/* remove click outlines */
+* {
+	outline: none;
+}
+::-moz-focus-inner {
+	border: 0;
+}
+
