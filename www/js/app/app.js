@@ -55,6 +55,7 @@ var obj = {
 
 		initData()
 		hoodie.account.on("signout", emptyData)
+		hoodie.account.on("signin", initData)
 	},
 
 	getAccounts: function(transactions){
