@@ -29,8 +29,8 @@ var obj = {
 					store.setData(data)
 					viewController.refreshAll()
 
-					hoodie.store.on("add:todo", addData)
-					hoodie.store.on("remove:todo", removeData)
+					hoodie.store.on("add:transaction", addData)
+					hoodie.store.on("remove:transaction", removeData)
 				})
 			},
 			addData = function(data){
